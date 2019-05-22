@@ -1,0 +1,34 @@
+@import '../../styles/mixins';
+
+.home-default-page {
+  background: #303030;
+
+  .content {
+    padding: 1em 2em;
+    color: #ededed !important;
+
+    .special-line {
+      margin: 2em -2em;
+    }
+
+    .second-content {
+      padding: 1em 0 3em;
+    }
+
+    @media screen and (max-width: 425px) {
+      padding: 0;
+
+      .card-width {
+        width: 100%;
+      }
+
+      .special-line {
+        margin: 0;
+      }
+
+      .second-content {
+      padding: 0 0 3em;
+    }
+    }
+  }
+}
